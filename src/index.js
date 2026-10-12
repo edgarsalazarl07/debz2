@@ -136,6 +136,11 @@ const estado = (n, mensaje) => {
 
 function actualizarCombate() {
     const listos = Boolean(jugador1 && jugador2);
+    for (const n of [1, 2]) {
+        document.querySelectorAll(`#py${n} .fighter-stats, #py${n} .battle-actions`).forEach((element) => {
+            element.classList.toggle("d-none", !listos);
+        });
+    }
     [jugador1, jugador2].forEach((jugador, i) => {
         const n = i + 1;
         if (jugador) {

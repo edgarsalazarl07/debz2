@@ -34,12 +34,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="fighter-stats mt-3">
+                <div class="fighter-stats mt-3 d-none">
                     <div class="text-start mb-2"><label class="form-label text-success fw-bold mb-1 small"><i class="fa-solid fa-heart me-1" aria-hidden="true"></i>Vida</label><div class="progress"><div id="p1-vida" class="progress-bar bg-success fw-bold" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div></div></div>
                     <div class="text-start mb-2"><label class="form-label text-info fw-bold mb-1 small"><i class="fa-solid fa-bolt me-1" aria-hidden="true"></i>Ki</label><div class="progress"><div id="p1-ki" class="progress-bar bg-info text-dark fw-bold" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div></div></div>
                     <div class="text-start mb-2"><label class="form-label text-warning fw-bold mb-1 small"><i class="fa-solid fa-fire me-1" aria-hidden="true"></i>Energía</label><div class="progress"><div id="p1-energia" class="progress-bar bg-warning text-dark fw-bold" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div></div></div>
                 </div>
-                <div class="battle-actions mt-3" role="group" aria-label="Acciones del jugador 1">
+                <div class="battle-actions mt-3 d-none" role="group" aria-label="Acciones del jugador 1">
                     <button type="button" id="p1-cargar" class="btn action-charge" disabled><i class="fa-solid fa-bolt" aria-hidden="true"></i><span>Cargar ki</span></button>
                     <button type="button" id="p1-especial" class="btn action-special" disabled><i class="fa-solid fa-fire" aria-hidden="true"></i><span id="p1-especial-label">Ataque especial</span></button>
                     <button type="button" id="p1-basico" class="btn action-basic" disabled><i class="fa-solid fa-hand-fist" aria-hidden="true"></i><span id="p1-basico-label">Ataque básico</span></button>
@@ -70,12 +70,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="fighter-stats mt-3">
+                <div class="fighter-stats mt-3 d-none">
                     <div class="text-start mb-2"><label class="form-label text-success fw-bold mb-1 small"><i class="fa-solid fa-heart me-1" aria-hidden="true"></i>Vida</label><div class="progress"><div id="p2-vida" class="progress-bar bg-success fw-bold" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div></div></div>
                     <div class="text-start mb-2"><label class="form-label text-info fw-bold mb-1 small"><i class="fa-solid fa-bolt me-1" aria-hidden="true"></i>Ki</label><div class="progress"><div id="p2-ki" class="progress-bar bg-info text-dark fw-bold" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div></div></div>
                     <div class="text-start mb-2"><label class="form-label text-warning fw-bold mb-1 small"><i class="fa-solid fa-fire me-1" aria-hidden="true"></i>Energía</label><div class="progress"><div id="p2-energia" class="progress-bar bg-warning text-dark fw-bold" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div></div></div>
                 </div>
-                <div class="battle-actions mt-3" role="group" aria-label="Acciones del jugador 2">
+                <div class="battle-actions mt-3 d-none" role="group" aria-label="Acciones del jugador 2">
                     <button type="button" id="p2-cargar" class="btn action-charge" disabled><i class="fa-solid fa-bolt" aria-hidden="true"></i><span>Cargar ki</span></button>
                     <button type="button" id="p2-especial" class="btn action-special" disabled><i class="fa-solid fa-fire" aria-hidden="true"></i><span id="p2-especial-label">Ataque especial</span></button>
                     <button type="button" id="p2-basico" class="btn action-basic" disabled><i class="fa-solid fa-hand-fist" aria-hidden="true"></i><span id="p2-basico-label">Ataque básico</span></button>
@@ -94,6 +94,7 @@
         <span id="attack-popup-detail" class="popup-detail">GOKU / 25 DE DAÑO</span>
     </div>
     <script src="./bundle.js?v=acciones-20261005"></script>
+    <script src="./src/stats-visibility.js"></script>
     <script src="./src/evolucion.js"></script>
     <link rel="stylesheet" href="./src/style.css">
 </body>
